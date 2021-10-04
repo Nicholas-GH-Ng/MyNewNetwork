@@ -1,5 +1,6 @@
 # MyNewsNetwork
-FYP NEW Network webapp Source Files
+MyNewsNetworkmaster = News Network webapp Source Files
+NewsManager = python libraryies, news feed feature and news categorization
 
 # Description
 My News Network Website, a news website sorts news into categories, and create a personalised news feed based on user preference and browsing history.
