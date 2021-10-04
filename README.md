@@ -2,10 +2,10 @@
 FYP NEW Network webapp Source Files
 
 # Description
-My News Network Website, a news website that uses Python libraries like NumPy and SciPy to sort news into categories, 
-and create a personalised news feed based on user preference and browsing history.
+My News Network Website, a news website sorts news into categories, and create a personalised news feed based on user preference and browsing history.
 
 **Technologies used**
+- Python libraries, like NumPy and SciPy
 - Website is hosted on Firebase
 - User data and news articles management via NoSQL.
 
