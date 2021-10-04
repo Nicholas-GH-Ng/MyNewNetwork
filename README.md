@@ -11,3 +11,5 @@ user data and news articles stored on a noSQL database.
 2. Make account or Login with template User account
 3. USERNAME: user@123.com
 4. PASSWORD: User123
+
+*the personalized news feed feature is offline, the scripts of the feature can be found in NewsManager*
