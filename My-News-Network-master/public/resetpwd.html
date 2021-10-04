@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- included meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <!---link styles.css-->
+    <link href="/open-iconic/font/css/open-iconic-bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Scrolling JS -->
+    <script src="https://unpkg.com/infinite-scroll@3/dist/infinite-scroll.pkgd.min.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+                		 https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.js"></script>
+    <!-- Include FirebaseUI via CDN -->
+    <link type="text/css" rel="stylesheet" href="https://www.gstatic.com/firebasejs/ui/4.6.1/firebase-ui-auth.css" />
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+    <title>Reset Password Page</title>
+</head>
+
+<body id="loginPage">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <img src="MNN Logo.png" id="logo" alt="My-News-Network-Logo">
+                <form style="padding-top: auto;">
+                    <h1 id="mainH1" style="text-align: center;">Reset Password Page</h1>
+                    <div class="form-group">
+                        <label for="email">Email address</label>
+                        <input type="email" id="resetPwdEmail" style="border-radius: 1em;" class="form-control"
+                            id="loginEmail" placeholder="Email">
+                    </div>
+                    <button type="button" onclick="sendPasswordReset()" id="resetBtn" style="border-radius: 1em;"
+                        class="btn btn-outline-success">Reset
+                        Password</button>
+                    <p class="helpText"> <a class="helpLink" href="index.html">Have an account?</a> <a class="helpLink"
+                            href="signup.html">Sign up here!</a></p>
+                </form>
+            </div>
+        </div>
+
+    </div>
+    <!-- include checkLogin JavaScript -->
+    <script src="checkLogin.js"></script>
+    <script>
+        // document.getElementById('resetBtn').addEventListener('click', sendPasswordReset); //add event listener
+    </script>
+</body>
+<script>
+    /*Some JS script*/
+    function togglePwdVisibility() { //to toggle Password visiblity in login page
+        var x = document.getElementById("loginPwd");
+        if (x.type === "password") {
+            x.type = "text";
+        } else {
+            x.type = "password";
+        }
+    }
+</script>
+
+</html>
