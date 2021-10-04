@@ -2,14 +2,17 @@
 FYP NEW Network webapp Source Files
 
 # Description
-My News Network Website, a new website that uses python libraries like Numpy and SciPy to sort news into categories, 
-and create personalised news feed based on user preferance and browsing history.The website is hosted on firebase,
-user data and news articles stored on a noSQL database.
+My News Network Website, a news website that uses Python libraries like NumPy and SciPy to sort news into categories, 
+and create a personalised news feed based on user preference and browsing history.
+
+**Technologies used**
+- Website is hosted on Firebase
+- User data and news articles management via NoSQL.
 
 # Usage
 1. GO TO https://my-news-network-15401.firebaseapp.com/
-2. Make account or Login with template User account
-3. USERNAME: user@123.com
-4. PASSWORD: User123
+2. Make account or login with template User account
+3. USERNAME: `user@123.com`
+4. PASSWORD: `User123`
 
-*the personalized news feed feature is offline, the scripts of the feature can be found in NewsManager*
+*Note: The personalized news feed feature is offline, but the scripts of the feature can be found in NewsManager*
