@@ -1,4 +1,4 @@
-# MyNewNetwork
+# MyNewsNetwork
 FYP NEW Network webapp Source Files
 
 # Description
